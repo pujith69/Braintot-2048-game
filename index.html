@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2048 Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="video-container left">
+        <iframe id="left-video-player"
+            src="https://www.youtube.com/embed/fonV8rw7h5Q?enablejsapi=1&loop=1&playlist=fonV8rw7h5Q" frameborder="0"
+            allowfullscreen></iframe>
+    </div>
+    <div class="main-container">
+        <div class="game-container">
+            <div class="header">
+                <h1>2048 Game</h1>
+                <div class="score-container">
+                    <div class="score-box">
+                        <p>Score</p>
+                        <span id="score">0</span>
+                    </div>
+                    <div class="score-box">
+                        <p>High Score</p>
+                        <span id="high-score">0</span>
+                    </div>
+                </div>
+            </div>
+            <button id="start-button">Start Game</button>
+            <div id="game-board" class="hidden"></div>
+            <button id="replay-button" class="hidden">Replay</button>
+        </div>
+    </div>
+    <div class="video-container right">
+        <iframe id="right-video-player"
+            src="https://www.youtube.com/embed/A7iRRtZWgQ0?enablejsapi=1&loop=1&playlist=A7iRRtZWgQ0" frameborder="0"
+            allowfullscreen></iframe>
+    </div>
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="script.js"></script>
+    <p>This is a new feature.</p>
+</body>
+
+</html>

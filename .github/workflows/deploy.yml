@@ -1,0 +1,29 @@
+name: Deploy 2048 Game
+
+on:
+  push:
+    branches: [ "main" ]   # run when code is pushed to main
+  workflow_dispatch:        # allow manual trigger
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      # OPTIONAL: If you want to add ESLint for JS later
+      # - name: Setup Node.js
+      #   uses: actions/setup-node@v3
+      #   with:
+      #     node-version: '18'
+      # - run: |
+      #     npm install eslint
+      #     npx eslint script.js
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./   # since your HTML/CSS/JS are at root

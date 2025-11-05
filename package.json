@@ -1,0 +1,30 @@
+{
+  "name": "braintot-2048-game",
+  "version": "1.0.0",
+  "description": "A 2048 game with YouTube video integration",
+  "main": "script.js",
+  "scripts": {
+    "start": "http-server",
+    "test": "echo \"No tests implemented yet\"",
+    "lint": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pujith69/Braintot-2048-game.git"
+  },
+  "keywords": [
+    "2048",
+    "game",
+    "javascript"
+  ],
+  "author": "pujith69",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pujith69/Braintot-2048-game/issues"
+  },
+  "homepage": "https://github.com/pujith69/Braintot-2048-game#readme",
+  "devDependencies": {
+    "eslint": "^8.0.0",
+    "http-server": "^14.0.0"
+  }
+}
